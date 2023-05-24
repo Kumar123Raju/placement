@@ -4,3 +4,9 @@
 2.to send or simply pass substring(ex: abcde but i want to pass only "bcd" means remove first and last character)
       string str="abcde"
       return recursioncall(str.substr(1,str.length()-2)  //it means "bcd" will pass on recursioncall funtion 
+3.VERY IMPORTANT TRY TO REVISE FREQUENTLY:
+ 3.1 substr(startingindex,lastindex)
+ 3.2 compare()
+ 3.3 find()
+ 3.4 replace()
+ 3.5 erase()
