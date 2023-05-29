@@ -10,3 +10,12 @@
  3.3 find()
  3.4 replace()
  3.5 erase()  //str.erase(starting_index,size_to_be_erase);
+ 
+ //important concept:--------------learn it 
+ convert charater value into integer
+ example: "12345"
+  char ch=num[4];
+           
+            int x=stoi(string(1,ch))
+            cout<<x<<endl; // output is 5 as a integer:
+            
