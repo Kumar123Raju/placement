@@ -12,7 +12,7 @@
  3.5 erase()  //str.erase(starting_index,size_to_be_erase);
  
  //important concept:--------------learn it 
- convert charater value into integer
+ convert charater value into integer--> for more understanding go and try this question ***(https://leetcode.com/problems/largest-odd-number-in-string/description/);
  example: "12345"
   char ch=num[4];
            
