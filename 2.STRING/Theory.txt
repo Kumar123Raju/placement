@@ -9,4 +9,4 @@
  3.2 compare()
  3.3 find()
  3.4 replace()
- 3.5 erase()
+ 3.5 erase()  //str.erase(starting_index,size_to_be_erase);
