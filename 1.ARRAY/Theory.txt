@@ -1,0 +1,41 @@
+in array: or vector one very important concept while using inbuild sort functionn
+******************
+let i want to sort any array or vector then we use:
+sort(arr,arr+n)  is equal to sort(arr,arr+n,comperator) both have same there is one optional argument are there through wich whenver i want,i can use it
+ex: 
+#include<bits/stdc++.h>
+using namespace std;
+//thsi is comperator function throug which it decrease the number and it is handle by myself using this funtion
+bool comperator(int &a,int &b){
+    return a<b;
+}
+int main(){
+   int n;
+   cin>>n;
+   int arr[n];
+   for(int i=0; i<n; i++){
+    cin>>arr[i];
+   }
+
+   sort(arr,arr+n,comperator);
+   for(auto it:arr)
+    cout<<it<<" ";
+    return 0;
+}
+or
+//int vector case:
+sort(v.begin(),v.end()) or sort(v.begin(),v.end(),copar);
+example:
+bool compar(pair<int,int> &a,pair<int,int> &b){
+    if(a.first>b.first) return true;
+    else if(a.first<b.first) return false;
+    else{
+        if(a.second<b.second) return true;
+        else return false;
+    }
+
+}
+
+//call sort functionn
+sort(v.begin(),v.end(),compar);
+
