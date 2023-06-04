@@ -3,3 +3,7 @@
  
  5.Isomorphic String (vvv..impo)
  https://leetcode.com/problems/isomorphic-strings/description/
+ 
+ 6.Reorganize String(good question)
+ https://leetcode.com/problems/reorganize-string/description/
+ 
