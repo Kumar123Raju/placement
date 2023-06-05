@@ -10,7 +10,7 @@
 3.VERY IMPORTANT TRY TO REVISE FREQUENTLY:
  3.1 substr(startingindex,lastindex) //very very important lastindex is excluded(mtlb agar last tak print  karna ha to last+1 karna hoga)
  3.2 compare()   //
- 3.3 find()
+ 3.3 find()   //str1.find(str2)    (str1 jisme find krna hai ....str2 jisko find karna hai)
  3.4 replace()  //replace(s.begin(), s.end(), 'a', '%');
  3.5 erase()  //str.erase(starting_index,size_to_be_erase);
  
