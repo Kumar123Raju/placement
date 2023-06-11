@@ -1,0 +1,62 @@
+1.first understand subsequences and substring
+give subsequence and substirng of "abcd"
+
+ChatGPT
+Sure! Here are the subsequences and substrings of the string "abcd":
+
+Subsequences:
+
+""
+"a"
+"b"
+"c"
+"d"
+"ab"
+"ac"
+"ad"
+"bc"
+"bd"
+"cd"
+"abc"
+"abd"
+"acd"
+"bcd"
+"abcd"
+
+Substrings:
+
+"a"
+"ab"
+"abc"
+"abcd"
+"b"
+"bc"
+"bcd"
+"c"
+"cd"
+"d"
+
+//very easy and conceptual problem   
+https://leetcode.com/problems/is-subsequence/submissions/
+
+int checkSubsequence(string s,int i,string t,int j){
+        // base case
+        if(i==s.size() || j==t.size()) return 0;
+     
+        if(s[i]==t[j])
+              return 1+checkSubsequence(s,i+1,t,j+1);
+        else 
+              return  checkSubsequence(s,i,t,j+1);
+    
+
+    }
+    bool isSubsequence(string s, string t) {
+        int i=0;
+        int j=0;
+       int x= checkSubsequence(s,i,t,j);
+        return x==s.size();
+        
+
+    }
+
+
