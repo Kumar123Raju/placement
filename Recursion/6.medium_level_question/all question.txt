@@ -1,0 +1,24 @@
+1.Elimination game: https://leetcode.com/problems/elimination-game/description/
+
+explanation:
+            This question is basically conceptuall
+            in first pass:  delete from left to right 
+                           so whatever result come after first pass it will   2*(1,2,3,4,etc) like this
+                           this can be get by just calling 2*fun(n/2);
+                           
+            in second pass:   delete from right to left 
+                               so we want to make this : jis se ke hum uspe first ke jaise he apply kar sake  uske liye usko convert krna padega:
+                                                         convert karne ke liye :   (1+n/2-solve(n/2) ) se to wo first ke tarah he ban jayega
+               
+               
+   solution: better is learn it
+   
+   
+          int lastRemaining(int n) {
+        if(n==1) return 1;
+
+        return 2*(1+(n/2)-lastRemaining(n/2));
+        
+    }
+    
+    
