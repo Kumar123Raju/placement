@@ -1,1 +1,36 @@
-theory
+theory:
+       A linked list is a data structure used for storing collections of data. A linked list has the following
+       properties.
+        • Successive elements are connected by pointers
+        • The last element points to NULL
+        • Can grow or shrink in size during execution of a program
+        • Can be made just as long as required (until systems memory exhausts)
+        • Does not waste memory space (but takes some extra memory for pointers). It
+        allocates memory as list grows.
+
+     issue with linked list:
+      1.it take O(n) to access any node while array take O(1)
+      2.each node have different memory address but in array all are allocated in continous memory which help to access faster
+
+
+Declaration of linked list :
+using structure:
+               struct node{ 
+                       int val;
+                    struct node *next;
+              };
+
+using class:
+             class node {
+                 public: 
+                      int data;
+                    node * next;
+                    node(int val) {
+                      data = val;
+                      next = NULL;
+                    }
+                  };
+
+singly list:
+
+
