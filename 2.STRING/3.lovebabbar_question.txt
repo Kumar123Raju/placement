@@ -6,4 +6,14 @@
  
  6.Reorganize String(good question)
  https://leetcode.com/problems/reorganize-string/description/
+
+10.String to Integer (atoi)(isme int overflow ka handling bht acha hai... isko dhayn se padhna jab v revision kro)
+https://leetcode.com/problems/string-to-integer-atoi/description/
+explain:
+        isme bola hai agar num 2^31-1 se jyada ho gaya to usko 2^31-1(2147483647) he answer return krdo 
+        check karne ka condition:
+                                 agar 214748365 me 10 multiply krenge to ye overflow ho jayega isliye is condition me return krdenge INT_MAX;
+                                 aur 214748364 me 10 multiply krenge to overflow nai hoga ye avi v(0,1,2,3,4,5,6,7) tak le skta hai...ye overflow 8,9 hoga tab hoga isliye agar 
+                                        ye huwa to return INT_MAX kar denge:
+        remember these two case ..for referenc see code :::::::::::::::::::::::::::::::::::::::::::::::::::::::::
  
