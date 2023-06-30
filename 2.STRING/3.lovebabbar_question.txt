@@ -16,4 +16,18 @@ explain:
                                  aur 214748364 me 10 multiply krenge to overflow nai hoga ye avi v(0,1,2,3,4,5,6,7) tak le skta hai...ye overflow 8,9 hoga tab hoga isliye agar 
                                         ye huwa to return INT_MAX kar denge:
         remember these two case ..for referenc see code :::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+13.Zigzag Conversion
+https://leetcode.com/problems/zigzag-conversion/description/
+    explain:   isko solve krne ka tarika hai ke 3 size ka vector lelo aur total isme 3 condition ko follow krna hai
+               case 1: if numRows=1 hoga tab original string ko he return kar dena hai
+               case 2: teeno vector me ziqzag me store krna hai to 
+                         ex: agar string=ABCDEFGH  hai aur numRow=3 hai to
+
+                             A   E
+                             B D  F  H  ( AISE ZIQ ZAQ BANANA HAI. FIRST ME ABC ROW VIAS STORE KR LENGE AUR USKE BAAD 2ND ROW PHR 1 FST ROW PHR 2ND ROW ,3RD ROW PHR 2ND ETC)
+                             C     G
+
+(for more detail go and check code)
+
  
